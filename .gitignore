@@ -1,6 +1,6 @@
 .Rproj.user
 /docs
-inst/extdata/nyc_pluto.parquet
 data-raw/pluto/data/
 tmp/
 .DS_Store
+!man/figures/

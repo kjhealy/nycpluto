@@ -5,6 +5,7 @@
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/kjhealy/nycpluto/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/kjhealy/nycpluto/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The nycpluto package provides the New York City Department of City
@@ -154,12 +155,12 @@ nyc_pluto() |>
   select(borough, description, share) |>
   tidyr::pivot_wider(names_from = borough, values_from = share)
 #> # A tibble: 4 × 6
-#>   description                         BK      SI     MN     QN     BX
-#>   <chr>                            <dbl>   <dbl>  <dbl>  <dbl>  <dbl>
-#> 1 Vacant Land                     0.0346 0.162   0.0753 0.0702 0.0633
-#> 2 Open Space & Outdoor Recreation 0.288  0.216   0.225  0.180  0.305 
-#> 3 One & Two Family Buildings      0.221  0.339   0.0148 0.341  0.165 
-#> 4 Multi-Family Elevator Buildings 0.0583 0.00825 0.146  0.0376 0.0815
+#>   description                         QN     BX     BK      SI     MN
+#>   <chr>                            <dbl>  <dbl>  <dbl>   <dbl>  <dbl>
+#> 1 Vacant Land                     0.0702 0.0633 0.0346 0.162   0.0753
+#> 2 Open Space & Outdoor Recreation 0.180  0.305  0.288  0.216   0.225 
+#> 3 One & Two Family Buildings      0.341  0.165  0.221  0.339   0.0148
+#> 4 Multi-Family Elevator Buildings 0.0376 0.0815 0.0583 0.00825 0.146
 ```
 
 ## Example: a map of lots

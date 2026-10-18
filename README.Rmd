@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 # nycpluto <img src="man/figures/nycpluto.png" align="right" width="360" alt="nycpluto package hex logo">
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/kjhealy/nycpluto/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/kjhealy/nycpluto/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The nycpluto package provides the New York City Department of City Planning's Primary Land Use Tax Lot Output (PLUTO), release 26v2 (August 2026). There is one record for each of the city's 858,284 tax lots, with 97 fields covering land use, buildings, zoning, ownership, and assessed value, plus the lot polygon from MapPLUTO. The data are stored as a GeoParquet file and accessed via [duckplyr](https://duckplyr.tidyverse.org), so you query only the rows and columns you need.
