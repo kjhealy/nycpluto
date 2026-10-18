@@ -1,0 +1,8 @@
+source,url,file,status,bytes,downloaded
+copied from data-to-be-packaged/homes,/Users/kjhealy/Documents/source/nyc-packages/data-to-be-packaged/homes/data/opendata/pluto.csv,data/pluto_26v2.csv,ok,334512482,2026-10-18T15:19:23Z
+copied from data-to-be-packaged/homes,/Users/kjhealy/Documents/source/nyc-packages/data-to-be-packaged/homes/docs/pluto_metadata.json,docs/pluto_opendata_metadata.json,ok,202683,2026-10-18T15:19:23Z
+copied from data-to-be-packaged/homes,/Users/kjhealy/Documents/source/nyc-packages/data-to-be-packaged/homes/docs/pluto_pluto_datadictionary.pdf,docs/pluto_datadictionary.pdf,ok,603555,2026-10-18T15:19:23Z
+copied from data-to-be-packaged/homes,/Users/kjhealy/Documents/source/nyc-packages/data-to-be-packaged/homes/docs/pluto_pluto_readme.pdf,docs/pluto_readme.pdf,ok,346013,2026-10-18T15:19:23Z
+DCP MapPLUTO,https://s-media.nyc.gov/agencies/dcp/assets/files/zip/data-tools/bytes/mappluto/nyc_mappluto_26v2_fgdb.zip,data/nyc_mappluto_26v2_fgdb.zip,ok,154621051,2026-10-18T15:19:26Z
+NYC Open Data qt5r-nqxp,https://data.cityofnewyork.us/api/views/qt5r-nqxp/rows.csv?accessType=DOWNLOAD,data/pluto_change_file.csv,ok,2987738,2026-10-18T15:19:37Z
+NYC Open Data qt5r-nqxp,https://data.cityofnewyork.us/api/views/qt5r-nqxp.json,docs/pluto_change_file_metadata.json,ok,15089,2026-10-18T15:19:37Z

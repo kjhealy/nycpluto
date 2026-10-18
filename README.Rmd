@@ -1,0 +1,111 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  dpi = 300
+)
+```
+
+# nycpluto <img src="man/figures/nycpluto.png" align="right" width="360" alt="nycpluto package hex logo">
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The nycpluto package provides the New York City Department of City Planning's Primary Land Use Tax Lot Output (PLUTO), release 26v2 (August 2026). There is one record for each of the city's 858,284 tax lots, with 97 fields covering land use, buildings, zoning, ownership, and assessed value, plus the lot polygon from MapPLUTO. The data are stored as a GeoParquet file and accessed via [duckplyr](https://duckplyr.tidyverse.org), so you query only the rows and columns you need.
+
+## Installation
+
+You can install the development version of nycpluto from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("pak")
+pak::pak("kjhealy/nycpluto")
+```
+
+## Load the package
+
+```{r load, message = FALSE}
+library(nycpluto)
+library(dplyr)
+library(ggplot2)
+```
+
+## What's included
+
+### Tax lots
+
+`nyc_pluto()` returns a duckplyr-backed lazy data frame. Use dplyr verbs to query it and `collect()` to bring results into R. Column names are PLUTO's own field names in lower case.
+
+```{r pluto}
+nyc_pluto() |>
+  select(-geometry)
+```
+
+`nyc_pluto_to_sf()` turns collected rows into an sf object, with lot polygons (the default) or points. `nyc_pluto_path()` gives the path to the GeoParquet file for use with arrow, DuckDB, or GDAL directly.
+
+### Lookup tables and changes
+
+```{r lookups}
+nyc_pluto_land_use_df
+
+nyc_pluto_bldg_class_df
+
+nyc_pluto_changes_df
+```
+
+## Example: land use by borough
+
+```{r land-use}
+nyc_pluto() |>
+  summarise(
+    lots = n(),
+    lot_area = sum(lotarea, na.rm = TRUE),
+    .by = c(borough, landuse)
+  ) |>
+  collect() |>
+  left_join(nyc_pluto_land_use_df, by = "landuse") |>
+  mutate(share = lot_area / sum(lot_area), .by = borough) |>
+  filter(landuse %in% c("01", "03", "09", "11")) |>
+  select(borough, description, share) |>
+  tidyr::pivot_wider(names_from = borough, values_from = share)
+```
+
+## Example: a map of lots
+
+Lots in Brooklyn Community District 6 (Park Slope, Carroll Gardens, Red Hook), by year built.
+
+```{r map, fig.height = 7, message = FALSE}
+library(sf)
+
+bk6 <- nyc_pluto() |>
+  filter(cd == 306L) |>
+  select(bbl, yearbuilt, landuse, geometry) |>
+  collect() |>
+  nyc_pluto_to_sf()
+
+bk6 |>
+  mutate(yearbuilt = na_if(yearbuilt, 0L)) |>
+  ggplot() +
+  geom_sf(aes(fill = yearbuilt), color = "white", linewidth = 0.02) +
+  scale_fill_viridis_c(option = "magma", na.value = "gray85") +
+  labs(
+    fill = "Year built",
+    title = "Brooklyn Community District 6, tax lots by year built",
+    caption = "PLUTO 26v2. Gray: no building or year unknown."
+  ) +
+  theme_void()
+```
+
+## Data sources
+
+- NYC Department of City Planning, [PLUTO and MapPLUTO](https://www.nyc.gov/content/planning/pages/resources/datasets/mappluto-pluto-change), release 26v2. MapPLUTO is the shoreline-clipped file geodatabase.
+- NYC Open Data, [PLUTO](https://data.cityofnewyork.us/d/64uk-42ks), for the 1,597 lots not in the clipped MapPLUTO, and the [PLUTO Change File](https://data.cityofnewyork.us/d/qt5r-nqxp).
+- NYC Department of Finance, building class descriptions from the [Annualized Calendar Sales Update](https://data.cityofnewyork.us/d/w2pb-icbu) data dictionary.

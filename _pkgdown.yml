@@ -1,0 +1,41 @@
+authors:
+  Kieran Healy:
+    href: http://kieranhealy.org
+
+url: https://kjhealy.github.io/nycpluto/
+template:
+  bootstrap: 5
+  bslib:
+    base_font: {google: "IBM Plex Sans"}
+    heading_font: {google: "IBM Plex Sans"}
+    code_font: {google: "IBM Plex Mono"}
+
+reference:
+  - title: "Tax lots"
+    desc: Functions for accessing PLUTO tax lots and MapPLUTO polygons.
+    contents:
+      - nyc_pluto
+      - nyc_pluto_path
+      - nyc_pluto_to_sf
+  - title: "Lookup tables and changes"
+    desc: Code definitions and DCP's corrections to source data.
+    contents:
+      - nyc_pluto_land_use_df
+      - nyc_pluto_bldg_class_df
+      - nyc_pluto_changes_df
+
+navbar:
+  right:
+   - icon: fa-github
+     href: https://github.com/kjhealy/nycpluto
+     aria-label: GitHub repository
+
+figures:
+  dev: grDevices::png
+  dpi: 300
+  dev.args: []
+  fig.ext: png
+  fig.width: 7.2916667
+  fig.height: ~
+  fig.retina: 2
+  fig.asp: 1.618

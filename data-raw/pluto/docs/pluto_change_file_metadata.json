@@ -1,0 +1,575 @@
+{
+  "id" : "qt5r-nqxp",
+  "name" : "PLUTO Change File",
+  "assetType" : "dataset",
+  "attribution" : "Department of City Planning (DCP)",
+  "attributionLink" : "https://www.nyc.gov/content/planning/pages/resources/datasets/mappluto-pluto-change",
+  "averageRating" : 0,
+  "category" : "City Government",
+  "createdAt" : 1575403824,
+  "description" : "This is a companion dataset to PLUTO and MapPLUTO. PLUTO and MapPLUTO are created using the best available data from a number of city agencies. To further improve data quality, the Department of City Planning (DCP) applies changes to selected field values. DCPEdited is set to \"1\" in PLUTO if the record contains any changed values.\n\nAll previously released versions of this data are available on the <a href=\"https://www.nyc.gov/content/planning/pages/resources/datasets/mappluto-pluto-change\">DCP Website: BYTES of the BIG APPLE</a>. Current version: 26v2",
+  "diciBackend" : false,
+  "displayType" : "table",
+  "downloadCount" : 3247,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 0,
+  "oid" : 32982176,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1575406179,
+  "publicationGroup" : 16740156,
+  "publicationStage" : "published",
+  "rowsUpdatedAt" : 1787605883,
+  "rowsUpdatedBy" : "iqqb-gm94",
+  "tableId" : 16740156,
+  "totalTimesRated" : 0,
+  "viewCount" : 9941,
+  "viewLastModified" : 1787605876,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1576015224,
+    "reviewedAutomatically" : true,
+    "state" : "approved",
+    "submissionId" : 1599486,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1576015224,
+    "targetAudience" : "public",
+    "workflowId" : 2285,
+    "submissionDetails" : {
+      "permissionType" : "READ"
+    },
+    "submissionOutcomeApplication" : {
+      "endedAt" : 1576015224,
+      "failureCount" : 0,
+      "startedAt" : 1576015224,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "5fuc-pqz2",
+      "displayName" : "NYC OpenData"
+    }
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 441178228,
+    "name" : "BBL",
+    "dataTypeName" : "text",
+    "description" : "A concatenation of the borough code, tax block and tax lot",
+    "fieldName" : "bbl",
+    "position" : 1,
+    "renderTypeName" : "text",
+    "tableColumnId" : 91622835,
+    "cachedContents" : {
+      "non_null" : "42955",
+      "largest" : "5080400010",
+      "null" : "0",
+      "top" : [ {
+        "item" : "1004730038",
+        "count" : "3"
+      }, {
+        "item" : "1006300052",
+        "count" : "3"
+      }, {
+        "item" : "4002390001",
+        "count" : "3"
+      }, {
+        "item" : "1019570140",
+        "count" : "3"
+      }, {
+        "item" : "3002600025",
+        "count" : "3"
+      }, {
+        "item" : "1006180066",
+        "count" : "3"
+      }, {
+        "item" : "1014890037",
+        "count" : "3"
+      }, {
+        "item" : "3066990004",
+        "count" : "3"
+      }, {
+        "item" : "1006060001",
+        "count" : "3"
+      }, {
+        "item" : "3002600011",
+        "count" : "3"
+      }, {
+        "item" : "2025460015",
+        "count" : "3"
+      }, {
+        "item" : "1002210001",
+        "count" : "3"
+      }, {
+        "item" : "3014980035",
+        "count" : "3"
+      }, {
+        "item" : "3025250001",
+        "count" : "2"
+      }, {
+        "item" : "4108340030",
+        "count" : "2"
+      }, {
+        "item" : "3058350001",
+        "count" : "2"
+      }, {
+        "item" : "1012590018",
+        "count" : "2"
+      }, {
+        "item" : "1022037501",
+        "count" : "2"
+      }, {
+        "item" : "1009220001",
+        "count" : "2"
+      }, {
+        "item" : "2033990001",
+        "count" : "2"
+      } ],
+      "smallest" : "1000010301",
+      "count" : "42955",
+      "cardinality" : "42955"
+    },
+    "format" : { }
+  }, {
+    "id" : 441178233,
+    "name" : "field",
+    "dataTypeName" : "text",
+    "description" : "Name of the PLUTO field being changed",
+    "fieldName" : "field",
+    "position" : 2,
+    "renderTypeName" : "text",
+    "tableColumnId" : 91622840,
+    "cachedContents" : {
+      "non_null" : "42955",
+      "largest" : "yearbuilt",
+      "null" : "0",
+      "top" : [ {
+        "item" : "yearbuilt",
+        "count" : "26354"
+      }, {
+        "item" : "ownername",
+        "count" : "14318"
+      }, {
+        "item" : "lotarea",
+        "count" : "2086"
+      }, {
+        "item" : "unitsres",
+        "count" : "83"
+      }, {
+        "item" : "unitstotal",
+        "count" : "74"
+      }, {
+        "item" : "numfloors",
+        "count" : "28"
+      }, {
+        "item" : "cd",
+        "count" : "9"
+      }, {
+        "item" : "lotfront",
+        "count" : "1"
+      }, {
+        "item" : "address",
+        "count" : "1"
+      }, {
+        "item" : "lotdepth",
+        "count" : "1"
+      } ],
+      "smallest" : "address",
+      "count" : "42955",
+      "cardinality" : "42955"
+    },
+    "format" : { }
+  }, {
+    "id" : 441178229,
+    "name" : "old_value",
+    "dataTypeName" : "text",
+    "description" : "The original value of the field",
+    "fieldName" : "old_value",
+    "position" : 3,
+    "renderTypeName" : "text",
+    "tableColumnId" : 91622836,
+    "cachedContents" : {
+      "non_null" : "42955",
+      "largest" : "THE PORT OFNY & NJ",
+      "null" : "0",
+      "top" : [ {
+        "item" : "1899",
+        "count" : "4593"
+      }, {
+        "item" : "1910",
+        "count" : "4471"
+      }, {
+        "item" : "NYC PARKS DEPT",
+        "count" : "4235"
+      }, {
+        "item" : "1900",
+        "count" : "3340"
+      }, {
+        "item" : "1901",
+        "count" : "3285"
+      }, {
+        "item" : "1920",
+        "count" : "2637"
+      }, {
+        "item" : "0",
+        "count" : "2119"
+      }, {
+        "item" : "DCAS",
+        "count" : "1821"
+      }, {
+        "item" : "1930",
+        "count" : "1550"
+      }, {
+        "item" : "DEPARTMENT OF EDUCATION",
+        "count" : "989"
+      }, {
+        "item" : "1905",
+        "count" : "971"
+      }, {
+        "item" : "1915",
+        "count" : "954"
+      }, {
+        "item" : "1931",
+        "count" : "769"
+      }, {
+        "item" : "HOUSING PRESERVATION & DEVELOPMENT",
+        "count" : "705"
+      }, {
+        "item" : "DEPT OF ENVIRONMENTAL PROTECTION",
+        "count" : "655"
+      }, {
+        "item" : "NYC DOT",
+        "count" : "651"
+      }, {
+        "item" : "1925",
+        "count" : "619"
+      }, {
+        "item" : "NYC TRANSIT",
+        "count" : "607"
+      }, {
+        "item" : "NYC PARKS",
+        "count" : "579"
+      }, {
+        "item" : "LIRR",
+        "count" : "487"
+      } ],
+      "smallest" : "0",
+      "count" : "42955",
+      "cardinality" : "42955"
+    },
+    "format" : { }
+  }, {
+    "id" : 441178227,
+    "name" : "new_value",
+    "dataTypeName" : "text",
+    "description" : "The changed value of the field",
+    "fieldName" : "new_value",
+    "position" : 4,
+    "renderTypeName" : "text",
+    "tableColumnId" : 91622834,
+    "cachedContents" : {
+      "non_null" : "42954",
+      "largest" : "PORT AUTHORITY OF NY AND NJ",
+      "null" : "1",
+      "top" : [ {
+        "item" : "NYC DEPARTMENT OF PARKS AND RECREATION",
+        "count" : "5002"
+      }, {
+        "item" : "NYC DEPARTMENT OF CITYWIDE ADMINISTRATIVE SERVICES",
+        "count" : "1951"
+      }, {
+        "item" : "NYC DEPARTMENT OF EDUCATION",
+        "count" : "1083"
+      }, {
+        "item" : "NYC DEPARTMENT OF ENVIRONMENTAL PROTECTION",
+        "count" : "1016"
+      }, {
+        "item" : "1909",
+        "count" : "827"
+      }, {
+        "item" : "NYC HOUSING PRESERVATION AND DEVELOPMENT",
+        "count" : "795"
+      }, {
+        "item" : "1889",
+        "count" : "788"
+      }, {
+        "item" : "1892",
+        "count" : "705"
+      }, {
+        "item" : "1890",
+        "count" : "685"
+      }, {
+        "item" : "1891",
+        "count" : "680"
+      }, {
+        "item" : "NYC DEPARTMENT OF TRANSPORTATION",
+        "count" : "670"
+      }, {
+        "item" : "1886",
+        "count" : "656"
+      }, {
+        "item" : "NYC TRANSIT AUTHORITY",
+        "count" : "634"
+      }, {
+        "item" : "1887",
+        "count" : "610"
+      }, {
+        "item" : "1897",
+        "count" : "586"
+      }, {
+        "item" : "1896",
+        "count" : "570"
+      }, {
+        "item" : "1899",
+        "count" : "538"
+      }, {
+        "item" : "1908",
+        "count" : "506"
+      }, {
+        "item" : "MTA - LIRR",
+        "count" : "488"
+      }, {
+        "item" : "1885",
+        "count" : "483"
+      } ],
+      "smallest" : "0",
+      "count" : "42955",
+      "cardinality" : "42955"
+    },
+    "format" : { }
+  }, {
+    "id" : 441178232,
+    "name" : "type",
+    "dataTypeName" : "number",
+    "description" : "Flag indicating the type of change",
+    "fieldName" : "type",
+    "position" : 5,
+    "renderTypeName" : "number",
+    "tableColumnId" : 91622839,
+    "cachedContents" : {
+      "non_null" : "42955",
+      "largest" : "3",
+      "null" : "0",
+      "top" : [ {
+        "item" : "2",
+        "count" : "26552"
+      }, {
+        "item" : "1",
+        "count" : "16400"
+      }, {
+        "item" : "3",
+        "count" : "3"
+      } ],
+      "smallest" : "1",
+      "count" : "42955",
+      "cardinality" : "42955"
+    },
+    "format" : { }
+  }, {
+    "id" : 441178231,
+    "name" : "reason",
+    "dataTypeName" : "text",
+    "description" : "The reason the field value was changed. See Appendix for valid values for programmatic and research changes. For user reported changes, the reason states the field that was wrong, e.g. \"Lot area wrong.\"",
+    "fieldName" : "reason",
+    "position" : 6,
+    "renderTypeName" : "text",
+    "tableColumnId" : 91622838,
+    "cachedContents" : {
+      "non_null" : "42955",
+      "largest" : "Zero lot area",
+      "null" : "0",
+      "top" : [ {
+        "item" : "LPC year built",
+        "count" : "26346"
+      }, {
+        "item" : "Normalized owner name",
+        "count" : "14318"
+      }, {
+        "item" : "Zero lot area",
+        "count" : "2082"
+      }, {
+        "item" : "PTS error - units",
+        "count" : "143"
+      }, {
+        "item" : "PTS error - numfloors",
+        "count" : "28"
+      }, {
+        "item" : "Geosupport error - CD",
+        "count" : "9"
+      }, {
+        "item" : "PTS error - yearbuilt",
+        "count" : "7"
+      }, {
+        "item" : "PTS error – units",
+        "count" : "5"
+      }, {
+        "item" : "PTS error - vacant lots with units",
+        "count" : "4"
+      }, {
+        "item" : "pluto_rpad_geo",
+        "count" : "3"
+      }, {
+        "item" : "Lot area wrong",
+        "count" : "2"
+      }, {
+        "item" : "PTS error - vacant lot with units",
+        "count" : "2"
+      }, {
+        "item" : "Lot frontage is incorrect",
+        "count" : "1"
+      }, {
+        "item" : "Lot area is incorrect",
+        "count" : "1"
+      }, {
+        "item" : "PTS error - lot area",
+        "count" : "1"
+      }, {
+        "item" : "Lot depth is incorrect",
+        "count" : "1"
+      }, {
+        "item" : "PTS error - streetname",
+        "count" : "1"
+      }, {
+        "item" : "Year built wrong",
+        "count" : "1"
+      } ],
+      "smallest" : "Geosupport error - CD",
+      "count" : "42955",
+      "cardinality" : "42955"
+    },
+    "format" : { }
+  }, {
+    "id" : 441178230,
+    "name" : "version",
+    "dataTypeName" : "text",
+    "description" : "For programmatic changes, this is version in which the programmatic change was implemented.",
+    "fieldName" : "version",
+    "position" : 7,
+    "renderTypeName" : "text",
+    "tableColumnId" : 91622837,
+    "cachedContents" : {
+      "non_null" : "42954",
+      "largest" : "26v2",
+      "null" : "1",
+      "top" : [ {
+        "item" : "20v1",
+        "count" : "25959"
+      }, {
+        "item" : "19v2",
+        "count" : "8784"
+      }, {
+        "item" : "22v3",
+        "count" : "4336"
+      }, {
+        "item" : "26v2",
+        "count" : "2082"
+      }, {
+        "item" : "20v4",
+        "count" : "784"
+      }, {
+        "item" : "22v1",
+        "count" : "689"
+      }, {
+        "item" : "21v4",
+        "count" : "113"
+      }, {
+        "item" : "24v2",
+        "count" : "62"
+      }, {
+        "item" : "23v2",
+        "count" : "32"
+      }, {
+        "item" : "23v1",
+        "count" : "23"
+      }, {
+        "item" : "25v4",
+        "count" : "16"
+      }, {
+        "item" : "25v1",
+        "count" : "14"
+      }, {
+        "item" : "24v3",
+        "count" : "12"
+      }, {
+        "item" : "26v1",
+        "count" : "11"
+      }, {
+        "item" : "24v4",
+        "count" : "9"
+      }, {
+        "item" : "24v1",
+        "count" : "8"
+      }, {
+        "item" : "20v2",
+        "count" : "6"
+      }, {
+        "item" : "25v2",
+        "count" : "5"
+      }, {
+        "item" : "25v3",
+        "count" : "4"
+      }, {
+        "item" : "23v3",
+        "count" : "3"
+      } ],
+      "smallest" : "19v2",
+      "count" : "42955",
+      "cardinality" : "42955"
+    },
+    "format" : { }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "metadata" : {
+    "attachments" : [ {
+      "filename" : "pluto_removed_records.csv",
+      "assetId" : "24ad89f5-533d-4dad-aeda-cdc179662ecb",
+      "name" : "pluto_removed_records.csv"
+    } ],
+    "custom_fields" : {
+      "Update" : {
+        "Automation" : "Yes",
+        "Update Frequency" : "Quarterly",
+        "Data Change Frequency" : "Quarterly"
+      },
+      "Dataset Information" : {
+        "Agency" : "Department of City Planning (DCP)"
+      }
+    },
+    "rowLabel" : "change to selected filed value in PLUTO",
+    "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+  },
+  "owner" : {
+    "id" : "5fuc-pqz2",
+    "displayName" : "NYC OpenData",
+    "profileImageUrlLarge" : "/api/users/5fuc-pqz2/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/5fuc-pqz2/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/5fuc-pqz2/profile_images/TINY",
+    "screenName" : "NYC OpenData",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "query" : { },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "5fuc-pqz2",
+    "displayName" : "NYC OpenData",
+    "profileImageUrlLarge" : "/api/users/5fuc-pqz2/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/5fuc-pqz2/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/5fuc-pqz2/profile_images/TINY",
+    "screenName" : "NYC OpenData",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "tags" : [ "pluto", "mappluto", "dtm", "tax block", "tax lot", "parcels", "change", "correction", "dcp", "city planning" ],
+  "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}
